@@ -1,0 +1,16 @@
+###队列###
+LinkedBlockingDeque链式双端阻塞队列(链接节点每次插入动态创建)
+ArrayDeque(数组实现的deque，不支持多线程并发访问，优点数组操作线性时间)
+ConcurrentLinkedDeque(基于链表无界并发deque,并发插入、删除和访问操作可以跨多个线程安全执行)
+LinkedList(双链表实现List和Deque接口，不同步即非线程安全，使用Collections.synchronizedList方法包装)
+
+AbstractQueue
+ArrayBlockingQueue(put满队列阻塞，take空队列阻塞；可以设置公平锁，但会降低吞吐量)
+ConcurrentLinkedQueue
+DelayQueue
+LinkedBlockingQueue
+PriorityBlockingQueue
+PriorityQueue
+
+LinkedTransferQueue
+SynchronousQueue
